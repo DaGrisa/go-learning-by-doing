@@ -2,7 +2,7 @@
 
 [[Back]](README.md)
 
-Usage examples of variables in go.
+Usage examples of variables in Go.
 
 ```go
 package main
@@ -26,7 +26,7 @@ func main() {
 
 ## Declaration
 
-Variable in go can be declared at package and function level.
+Variables in Go can be declared at package and function level.
 
 ```go
 package main
