@@ -1,4 +1,4 @@
-# 02 Variables
+# 02 - Variables
 
 [[Back]](README.md)
 
@@ -14,13 +14,15 @@ var packageLevel int = 42
 func main() {
 	var functionLevel, otherVariable bool = true, true
 	implicitType, otherInteger := "wow", 24
+	const constant = 42
 
 	fmt.Println(
 		packageLevel,
 		functionLevel,
 		otherVariable,
 		implicitType,
-		otherInteger)
+		otherInteger,
+		constant)
 }
 ```
 
@@ -39,9 +41,9 @@ func main() {
 }
 ```
 
-## Definition
+### Default Values
 
-Variables can be defined at declaration by using `=`.
+Variables can be defaulted at declaration by using `=`.
 
 ```go
 var packageLevel int = 42
@@ -49,10 +51,18 @@ var packageLevel int = 42
 
 ### Implicit Types
 
-Variables can be implicitly typed by using `:=`.
+Variables can be implicitly typed by using `:=` (only available for function-level variables).
 
 ```go
 	implicitType, otherInteger := "wow", 24
+```
+
+### Constants
+
+Constants can be defined using the keyword `const`. They can be character, string, boolean, or numeric values and not be declared using `:=`.
+
+```go
+	const constant = 42
 ```
 
 [[Back]](README.md)
