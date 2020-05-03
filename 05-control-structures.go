@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"time"
 )
 
@@ -30,7 +31,7 @@ func main() {
 
 	hour := time.Now().Hour()
 	var daytime string
-	switch hour {
+	switch {
 	case hour >= 23:
 		daytime = "midnight"
 	case hour >= 18:
@@ -52,4 +53,10 @@ func main() {
 		}
 	}
 	fmt.Println("Primes up to", primesUpTo, "=", primes)
+
+	integers := []int{1, 2, 3, 4, 5}
+	for index, value := range integers {
+		powerOfTwo := math.Pow(float64(value), 2)
+		fmt.Printf("%d: %d*%d = %f", index, value, value, powerOfTwo)
+	}
 }

@@ -125,4 +125,14 @@ func isPrime(n int) bool {
 }
 ```
 
+`for` can also be used with `range` for arrays and slices.
+
+```go
+integers := []int{1, 2, 3, 4, 5}
+for index, value := range integers {
+	powerOfTwo := math.Pow(float64(value), 2)
+	fmt.Printf("%d: %d*%d = %f", index, value, value, powerOfTwo)
+}
+```
+
 [[Back]](README.md)
