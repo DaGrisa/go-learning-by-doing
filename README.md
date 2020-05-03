@@ -1,2 +1,6 @@
 # go-learning-by-doing
-Go Learning By Doing
+
+Learning go step-by-step with some practical examples.
+
+1. [Hello Go](01-hello.md)
+2. [Variables](02-variables.md)
